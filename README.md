@@ -1,4 +1,4 @@
-# The Ultimate Compendium for Evaluating Large Language Models (LLMs) with Python
+# Comprehensive Guide to Evaluating Language Models (LLMs) with Python
 ## Introduction
 
 Evaluating the performance of Large Language Models (LLMs) is an essential step in ensuring they meet user expectations for accuracy, logical reasoning, ethical behavior, and usability. This comprehensive guide combines theoretical understanding, formulas, and Python implementations for a wide array of metrics. By the end of this blog, you will have all the tools necessary to benchmark and improve your LLM.
