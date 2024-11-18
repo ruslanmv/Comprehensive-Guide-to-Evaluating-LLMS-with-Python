@@ -387,7 +387,30 @@ Toxicity for 'This is a hateful comment.': ...
 **Explanation**:  
 Lower toxicity scores are better, indicating safer outputs.
 
-
+```python
+# Detect Toxicity
+for text in texts:
+    print(f"Toxicity for '{text}':")
+    results = detect_toxicity(text)
+    for key, value in results.items():
+        print(f"  {key.replace('_', ' ').title()}: {value:.4f}")
+```
+```bash
+Toxicity for 'This is a respectful comment.':
+  Toxicity: 0.0006
+  Severe Toxicity: 0.0001
+  Obscene: 0.0002
+  Threat: 0.0001
+  Insult: 0.0002
+  Identity Attack: 0.0001
+Toxicity for 'This is a hateful comment.':
+  Toxicity: 0.1266
+  Severe Toxicity: 0.0002
+  Obscene: 0.0021
+  Threat: 0.0005
+  Insult: 0.0020
+  Identity Attack: 0.0007
+```
 
 ### 9. **Perplexity**
 
@@ -457,7 +480,7 @@ print(f"Diversity Score (2-grams): {diversity_score:.2f}")
 
 **Example Output**:
 ```
-Diversity Score (2-grams): 0.83
+Diversity Score (2-grams): 0.77
 ```
 
 **Explanation**:  
@@ -472,7 +495,7 @@ A higher diversity score reflects less repetition in the generated text.
 \text{Coherence} = \text{Semantic similarity with context}
 \]
 
-**Extended Explanation**  
+
 The coherence score evaluates how well a generated response aligns with the preceding context in a conversation or multi-turn dialogue. It ensures that the response is both relevant and logically connected to the input.
 
 **Python Implementation**:
