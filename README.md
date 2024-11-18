@@ -566,4 +566,4 @@ This comprehensive guide covers the most important metrics for evaluating LLMs, 
 - Improve performance through targeted fine-tuning.
 - Write research papers showcasing your evaluation results.
 
-Start using these metrics today to evaluate your own LLMs and contribute to the development of better AI systems! Let me know if you'd like a GitHub repository with all the code.
+Start using these metrics today to evaluate your own LLMs and contribute to the development of better AI systems! 
